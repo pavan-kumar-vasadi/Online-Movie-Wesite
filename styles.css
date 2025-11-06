@@ -1,0 +1,393 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f5f7fb;
+}
+.box-type {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  margin-top: 30px;
+  background-size: cover;
+  background-position: center;
+  animation: bgChange 20s infinite;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes bgChange {
+  0% {
+    background-image: url('https://img.freepik.com/free-vector/movie-night-cartoon-landing-page_107791-6072.jpg?semt=ais_hybrid');
+  }
+  25% {
+    background-image: url('https://lehren.com/wp-content/uploads/2023/08/top-5-highest-grossing-telugu-movies-of-all-time.jpg');
+  }
+  50% {
+    background-image: url('https://static1.moviewebimages.com/wordpress/wp-content/uploads/2023/08/the-funniest-british-comedy-movies-of-all-time-ranked-rp.jpg');
+  }
+  75% {
+    background-image: url('https://tse4.mm.bing.net/th/id/OIP.0UCwjqTosTTGK9vMsEizOQAAAA?rs=1&pid=ImgDetMain&o=7&rm=3');
+  }
+  100% {
+    background-image: url('https://static1.colliderimages.com/wordpress/wp-content/uploads/2022/06/Feature-Img-Best-Most-Iconic-Bollywood-Movies.jpg');
+  }
+}
+
+
+/* Navbar */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  border-bottom: 2px solid tomato;
+}
+
+.nav-bar img {
+  width: 80px;
+}
+ul  {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  margin-right: 50px;
+  cursor: pointer;
+}
+ul li:hover {
+  color: tomato;
+}
+
+.btn1 {
+  padding: 10px 25px;
+  font-weight: 600;
+  background-color: tomato;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.btn1:hover {
+  background-color: transparent;
+  border: 2px solid tomato;
+  color: tomato;
+}
+
+/* Grid */
+.grid-container {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+  padding: 30px;
+}
+
+/* Card */
+.card img {
+  width: 250px;
+  height: 350px;
+  border-radius: 6px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover zoom */
+.card img:hover {
+  transform: scale(1.1);
+  border: 3px solid black;
+}
+
+/* Hidden items */
+.hidden {
+  display: none;
+}
+/* See More button */
+.see-more-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: tomato;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  margin: 20px auto 50px;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.see-more-btn:hover {
+  transform: scale(1.05);
+  background-color: transparent;
+  border: 2px solid tomato;
+  color: tomato;
+}
+
+.arrow {
+  margin-left: 8px;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.see-more-btn:hover .arrow {
+  transform: translateY(4px);
+}
+.login-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.login-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  display: grid;
+  gap: 20px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.login-box h2 {
+  color: tomato;
+  margin: 0;
+}
+
+.btn-group button {
+  background-color: tomato;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 100%;
+}
+
+.btn-group button:hover {
+  background-color: #e14c2a;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #666;
+  font-weight: bold;
+}
+
+.close-btn:hover {
+  color: tomato;
+}
+
+.hidden {
+  display: none;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: tomato;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.back-btn {
+  cursor: pointer;
+  color: tomato;
+  font-weight: bold;
+}
+h1{
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1:hover{
+  color: #e14c2a;
+}
+/* 🔝 Back to Top Button */
+#backToTop {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: tomato;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  display: none; /* initially hide */
+  z-index: 1000;
+}
+
+/* Hover effect */
+#backToTop:hover {
+  background-color: #ff6347;
+  transform: scale(1.1);
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  #backToTop {
+    bottom: 15px;
+    right: 15px;
+    padding: 10px 14px;
+    font-size: 18px;
+  }
+}
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px 10px;
+  margin-top: 40px;
+  border-radius: 10px 10px 0 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  color: tomato;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: tomato;
+}
+
+.social-icons img {
+  width: 30px;
+  margin-right: 10px;
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid gray;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* 📱 Responsive footer for small screens */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-icons img {
+    margin: 5px;
+  }
+}
+/* 🌞 Theme Toggle Button */
+#themeToggle {
+  position: fixed;
+  bottom: 90px;
+  right: 25px;
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+#themeToggle:hover {
+  background-color: tomato;
+  transform: scale(1.05);
+}
+
+/* 🌑 Dark Mode Style */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode .card img {
+  border: 2px solid #333;
+}
+
+.dark-mode .movie-info {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .footer {
+  background-color: #1e1e1e;
+  color: #ccc;
+}
+
+.dark-mode a {
+  color: #ff6347;
+}
+
